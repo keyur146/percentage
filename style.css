@@ -1,0 +1,125 @@
+body {
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    font-size: 12px;
+    overflow: hidden;
+  }
+  
+  body, button, input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: rgb(129,165,172);
+    background: linear-gradient(80deg, rgb(194, 200, 201) 0%, rgba(77,71,68,1) 100%);
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .app-title {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    color: #08477a;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-left: 4px dashed #000000;
+    padding: 10px;
+    text-shadow: 2px 2px 2px #2e2e2e;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #2e2e2e;
+    color: #ddd;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: black;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: 1px groove black;
+    padding: 5px;
+    color: #08477a;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+  }
+  
+  .app-form-button:hover {
+    color: #000000;
+  }
+  
+  .showdata{
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    padding-top: -10px;
+    padding-bottom: 10px;
+  }
